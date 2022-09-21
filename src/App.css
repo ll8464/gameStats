@@ -50,6 +50,9 @@ footer {
   font-size: 18px;
 }
 
+#searchIcon {
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
