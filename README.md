@@ -21,3 +21,11 @@ Change Achievement Names to splice out all underscores to improve readability.
 ### Bugs and Errors
 
 SearchIcon not displaying - could be a corrupted file.
+When searching for a game, receiving CORS Missing Allow Origin error.
+
+### Current Work
+
+09/21/22 - Created a working search bar for the achievements data. Needed to use ref to store and access the search's text input to a DOM node.
+(https://reactjs.org/docs/refs-and-the-dom.html)
+
+Organized code into React components.
