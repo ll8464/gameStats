@@ -1,11 +1,11 @@
 import "./App.css";
 import "./Achievements.js";
 import React from "react";
-
+const apiKey = "";
 let achievements = {
   fetchAchievements: function (game) {
     fetch(
-      "http://api.steampowered.com/ISteamUserStats/GetGlobalAchievementPercentagesForApp/v0002/?gameid=" +
+      "https://api.steampowered.com/ISteamUserStats/GetGlobalAchievementPercentagesForApp/v0002/?gameid=" +
         game +
         "&format=json"
     );

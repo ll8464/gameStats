@@ -20,8 +20,10 @@ Change Achievement Names to splice out all underscores to improve readability.
 
 ### Bugs and Errors
 
-SearchIcon not displaying - could be a corrupted file.
-When searching for a game, receiving CORS Missing Allow Origin error.
+1. SearchIcon not displaying - could be a corrupted file.
+2. When searching for a game, receiving CORS Missing Allow Origin error. - UPDATE - the CORS is a permissions error on steam's side. A work around is to use a web server instead.
+3. node.js cannot find module 'request' - UPDATE - Solution, the folder containing the directory needs to run: npm install request
+   (https://stackoverflow.com/questions/16482600/node-js-cannot-find-module-request)
 
 ### Current Work
 
@@ -29,3 +31,9 @@ When searching for a game, receiving CORS Missing Allow Origin error.
 (https://reactjs.org/docs/refs-and-the-dom.html)
 
 Organized code into React components.
+
+09/22/22 - Created serverTest folder containing hello.js and helloExpress to create node and express practice servers respectively.
+(https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction)
+
+Found a page explaining how to overcome the CORS issue with the steam api.
+https://danbeyer.github.io/steamapi/page2.html
