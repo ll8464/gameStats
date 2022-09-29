@@ -16,14 +16,14 @@ app.use(function (req, res, next) {
 app.set("port", 3001);
 
 app.get("/news", function (req, res) {
-  let qParams = [];
+  let qParams = [{ name: "Hi", value: "Hello" }];
   for (let p in req.query) {
     qParams.push({ name: p, value: req.query[p] });
   }
 
   const url =
     "http://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=" +
-    qParams[0].name +
+    "440" +
     "&count=3&maxlength=300&format=json";
   request(url, function (err, response, body) {
     if (!err && response.statusCode < 400) {
